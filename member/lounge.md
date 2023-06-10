@@ -1,5 +1,4 @@
 ---
-sidebar: false
 title: 'Lounge names history'
 ---
 
