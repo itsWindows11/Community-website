@@ -1,26 +1,21 @@
 ---
 sidebar: false
+title: 'Lounge names history'
 ---
 
-<template>
-<h1>Lounge names history</h1>
-<em>List is curated by Torch</em><hr>
-<div id="loungeNames"><h2>Loading...</h2></div>
-</template>
-<style>
-  .theme-default-content:not(.custom) {
-    max-width: max-content !important;
-  }
-</style>
-<ClientOnly>
-<tt>
-<script>
-fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://torch.is/typing/loungenameshtml.txt')}`)
-.then(response => {
-	if (response.ok) return response.json()
-	throw new Error('Network response was not ok.')
-})
-.then(data => document.getElementById('loungeNames').innerHTML = data.contents);
+<script setup>
+	const url = 'https://corsproxy.io/?' + encodeURIComponent('https://torch.is/typing/loungenameshtml.txt');
+	
+	fetch(url)
+		.then(response => {
+			if (response.ok) return response.text()
+			throw new Error('Network response was not ok.')
+		})
+		.then(data => {
+			document.getElementById('loungeNames').innerHTML = data;
+		});
 </script>
-</tt>
-</ClientOnly>
+
+<h1>Lounge names history</h1>
+<em>List is curated by <a href="https://github.com/torchgm">Torch</a></em><hr>
+<div id="loungeNames"><h2>Loading...</h2></div>
