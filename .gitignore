@@ -3,6 +3,7 @@ node_modules
 *.log
 .temp
 /special-layout
-/.vuepress/components
-/.vuepress/dist
+/.vitepress/components
+/.vitepress/cache
+/.vitepress/dist
 msCommunitySpace.code-workspace

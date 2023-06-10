@@ -4,18 +4,16 @@
   "description": "MS Community Documentation website",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vitepress dev --port 1337",
+    "build": "vitepress build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Microsoft-Community/Community-website"
   },
-  "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.5.3",
-    "vuepress": "^1.5.3"
-  },
   "dependencies": {
-    "vuepress-theme-default-prefers-color-scheme": "^1.1.0"
+    "node-fetch": "^3.3.1",
+    "vitepress": "^1.0.0-beta.1",
+    "vue": "^3.3.4"
   }
 }
