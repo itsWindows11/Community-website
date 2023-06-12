@@ -5,18 +5,20 @@ title: 'Lounge names history'
 <ClientOnly>
 
 <script setup>
-	const url = 'https://corsproxy.io/?' + encodeURIComponent('https://torch.is/typing/loungenameshtml.txt');
-	
-	fetch(url)
+	import { onMounted } from 'vue';
+
+	onMounted(() => {
+	  fetch('https://corsproxy.io/?' + encodeURIComponent('https://torch.is/typing/loungenameshtml.txt'))
 		.then(response => {
 			if (response.ok) return response.text()
 			throw new Error('Network response was not ok.')
 		})
 		.then(data => {
-			if (!document) {
+			if (document !== undefined) {
 				document.getElementById('loungeNames').innerHTML = data;
 			}
 		});
+	});
 </script>
 
 <h1>Lounge names history</h1>
