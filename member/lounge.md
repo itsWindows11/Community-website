@@ -13,7 +13,9 @@ title: 'Lounge names history'
 			throw new Error('Network response was not ok.')
 		})
 		.then(data => {
-			document.getElementById('loungeNames').innerHTML = data;
+			if (!document) {
+				document.getElementById('loungeNames').innerHTML = data;
+			}
 		});
 </script>
 
