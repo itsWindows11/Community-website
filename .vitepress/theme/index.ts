@@ -5,7 +5,7 @@ import './style.css'
 import './custom-style.css'
 
 export default {
-  ...Theme,
+  extends: Theme,
   Layout: () => {
     return h(Theme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
