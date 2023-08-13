@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # Member Information
 
 We'd like you to bear in mind that none of our **moderators** work for nor are affiliated with Microsoft. **Verified employees will rock the `Microsoft employees` role.**

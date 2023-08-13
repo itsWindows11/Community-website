@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # Moderator Documentation
 ## Roles
 | Role Name                                                                                    | Role Requirement                                                      | Role Perks                                                                                                                           |

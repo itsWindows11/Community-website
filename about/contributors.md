@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 ## Website contributors
 * Initial website content foundation by [Molly](https://github.com/mollymilllions)
 * General website maintenance, feature additions by Jaska, [Erisa](https://github.com/Erisa) and Kirby

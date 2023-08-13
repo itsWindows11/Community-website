@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # Moderation team
 
 ### Lead Moderators

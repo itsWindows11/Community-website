@@ -1,5 +1,6 @@
 ---
-title: 'Lounge names history'
+sidebar: false
+footer: false
 ---
 
 <ClientOnly>

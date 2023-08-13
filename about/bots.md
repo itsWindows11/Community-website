@@ -1,3 +1,7 @@
+---
+footer: false
+---
+
 # Bots
 
 ### Cliptok

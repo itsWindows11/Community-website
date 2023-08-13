@@ -1,3 +1,6 @@
+---
+footer: false
+---
 
 # Moderator Resources
 
