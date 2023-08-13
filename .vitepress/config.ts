@@ -76,6 +76,9 @@ export default defineConfig({
     },
     search: {
       provider: 'local'
-    }
+    },
+    footer: {
+      message: 'Not associated with Microsoft.'
+    },
   }
 })
