@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "MS Community Documentation website",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev --port 1337",
     "build": "vitepress build"
@@ -13,7 +14,7 @@
   },
   "dependencies": {
     "node-fetch": "^3.3.1",
-    "vitepress": "^1.0.0-beta.2",
+    "vitepress": "^1.0.0-rc.4",
     "vue": "^3.3.4"
   }
 }
