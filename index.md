@@ -7,7 +7,7 @@ hero:
     tagline: Not associated with Microsoft
     image:
         src: /img/MSracoon.png
-        alt: Visualization of Microsoft logo sitting with a racoon.
+        alt: Visualization of the Microsoft logo sitting with a racoon.
     actions:
         - theme: brand
           text: Join server 
