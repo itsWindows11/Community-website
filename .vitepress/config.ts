@@ -45,8 +45,27 @@ export default defineConfig({
           { text: 'Moderation team', link: '/about/moderators' },
           { text: 'Community reviews', link: 'https://disboard.org/server/150662382874525696' }
         ]
-      }
+      },
     ],
+    sidebar: {
+      '/wiki/': [
+        {
+          text: 'Wiki',
+          items: [
+            { text: 'Home', link: '/wiki/' },
+            { text: 'Troubleshooting', link: '/wiki/troubleshooting' },
+            { text: 'Fixing Problems with the Microsoft Store', link: '/wiki/fixing-microsoft-store' },
+            { text: 'Installing Windows', link: '/wiki/installing-windows' },
+            { text: 'Joining and Leaving the Windows Insider Program', link: '/wiki/windows-insiders' },
+            { text: 'Reinstalling GPU Drivers', link: '/wiki/reinstalling-gpu-drivers' },
+            { text: 'Using the Media Creation Tool', link: '/wiki/using-the-media-creation-tool' },
+            { text: 'Common Windows Misconceptions', link: '/wiki/common-misconceptions' },
+            { text: 'Backing Up Data', link: '/wiki/backup' },
+            { text: 'The Windows Feature Store', link: '/wiki/windows-feature-store' }
+          ]
+        }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Microsoft-community' },
       { icon: 'discord', link: 'https://aka.ms/community-discord' }
