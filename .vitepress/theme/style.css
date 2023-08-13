@@ -8,13 +8,13 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #646cff;
-  --vp-c-brand-light: #747bff;
-  --vp-c-brand-lighter: #9499ff;
-  --vp-c-brand-lightest: #bcc0ff;
-  --vp-c-brand-dark: #535bf2;
-  --vp-c-brand-darker: #003E92;
-  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+  --vp-c-brand: #008CE9;
+  --vp-c-brand-light: #33adff;
+  --vp-c-brand-lighter: #66c2ff;
+  --vp-c-brand-lightest: #99d6ff;
+  --vp-c-brand-dark: #007acc;
+  --vp-c-brand-darker: #005c99;
+  --vp-c-brand-dimm: rgba(0, 138, 230, 0.08);
 }
 
 /**
@@ -41,8 +41,8 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #54b3df 50%,
-    #0078D4
+    var(--vp-c-brand) 50%,
+    var(--vp-c-brand-lighter)
   );
 }
 
