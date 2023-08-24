@@ -23,18 +23,7 @@ export default defineConfig({
       },
       {
         text: 'Wiki',
-        items: [
-          { text: 'Home', link: '/wiki/' },
-          { text: 'Troubleshooting', link: '/wiki/troubleshooting' },
-          { text: 'Fixing Problems with the Microsoft Store', link: '/wiki/fixing-microsoft-store' },
-          { text: 'Installing Windows', link: '/wiki/installing-windows' },
-          { text: 'Joining and Leaving the Windows Insider Program', link: '/wiki/windows-insiders' },
-          { text: 'Reinstalling GPU Drivers', link: '/wiki/reinstalling-gpu-drivers' },
-          { text: 'Using the Media Creation Tool', link: '/wiki/using-the-media-creation-tool' },
-          { text: 'Common Windows Misconceptions', link: '/wiki/common-misconceptions' },
-          { text: 'Backing Up Data', link: '/wiki/backup' },
-          { text: 'The Windows Feature Store', link: '/wiki/windows-feature-store' }
-        ]
+        items: wikiLinks()
       },
       {
         text: 'About',
@@ -51,18 +40,7 @@ export default defineConfig({
       '/wiki/': [
         {
           text: 'Wiki',
-          items: [
-            { text: 'Home', link: '/wiki/' },
-            { text: 'Troubleshooting', link: '/wiki/troubleshooting' },
-            { text: 'Fixing Problems with the Microsoft Store', link: '/wiki/fixing-microsoft-store' },
-            { text: 'Installing Windows', link: '/wiki/installing-windows' },
-            { text: 'Joining and Leaving the Windows Insider Program', link: '/wiki/windows-insiders' },
-            { text: 'Reinstalling GPU Drivers', link: '/wiki/reinstalling-gpu-drivers' },
-            { text: 'Using the Media Creation Tool', link: '/wiki/using-the-media-creation-tool' },
-            { text: 'Common Windows Misconceptions', link: '/wiki/common-misconceptions' },
-            { text: 'Backing Up Data', link: '/wiki/backup' },
-            { text: 'The Windows Feature Store', link: '/wiki/windows-feature-store' }
-          ]
+          items: wikiLinks()
         }
       ]
     },
@@ -82,3 +60,18 @@ export default defineConfig({
     },
   }
 })
+
+function wikiLinks() {
+  return [
+    { text: 'Home', link: '/wiki/' },
+    { text: 'Troubleshooting', link: '/wiki/troubleshooting' },
+    { text: 'Fixing Problems with the Microsoft Store', link: '/wiki/fixing-microsoft-store' },
+    { text: 'Installing Windows', link: '/wiki/installing-windows' },
+    { text: 'Joining and Leaving the Windows Insider Program', link: '/wiki/windows-insiders' },
+    { text: 'Reinstalling GPU Drivers', link: '/wiki/reinstalling-gpu-drivers' },
+    { text: 'Using the Media Creation Tool', link: '/wiki/using-the-media-creation-tool' },
+    { text: 'Common Windows Misconceptions', link: '/wiki/common-misconceptions' },
+    { text: 'Backing Up Data', link: '/wiki/backup' },
+    { text: 'The Windows Feature Store', link: '/wiki/windows-feature-store' }
+  ];
+}
