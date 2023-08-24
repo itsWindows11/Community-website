@@ -1,6 +1,8 @@
 ---
 sidebar: false
 footer: false
+aside: false
+pageClass: lounge-page
 ---
 
 <ClientOnly>
@@ -25,5 +27,15 @@ footer: false
 <h1>Lounge names history</h1>
 <em>List is curated by <a href="https://github.com/torchgm">Torch</a></em><hr>
 <div id="loungeNames"><h2>Loading...</h2></div>
+
+<style>
+	div.lounge-page > .VPContent > .VPDoc:not(.has-sidebar) > .container > .content {
+	  max-width: max-content !important;
+	}
+	
+	div.lounge-page > .VPContent > .VPDoc:not(.has-sidebar) > .container {
+	  max-width: max-content !important;
+	}
+</style>
 
 </ClientOnly>
